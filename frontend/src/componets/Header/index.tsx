@@ -1,6 +1,6 @@
-import logo from '../../assets/img/logo.svg'
+import logo from '../../assets/img/logo.svg';
 
-import './styles.css'
+import './styles.css';
 
 function App() {
 return(
@@ -19,4 +19,4 @@ return(
 
 }
 
-export default App
+export default App;
