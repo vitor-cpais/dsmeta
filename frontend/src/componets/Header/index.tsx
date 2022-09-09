@@ -8,7 +8,7 @@ return(
     <header>
         <div className="dsmeta-logo-container">
             <img src={logo} alt="DSMeta" />
-            <h1>DSMeta</h1>
+            <h1>VP</h1>
             <p>
               Desenvolvido por Vitor C Pais
               
