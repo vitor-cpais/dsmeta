@@ -1,7 +1,9 @@
 import icon from '../../assets/img/notification-icon.svg';
 import { BASE_URL } from '../../utils/request';
 import './styles.css';
+
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 
 type Props = {
@@ -10,12 +12,11 @@ type Props = {
 
 }
 
-function handleClick(saleId: number){
-    axios(`${BASE_URL}/sales/${saleId}/notification`)
+function handleClick(id: number){
+    axios(`${BASE_URL}/sales/${id}/notification`)
     .then(Response => {
-        console.log("certo")
-    })
-
+        toast.info("SMS ENVIADO CARAI");
+    });
 }
 
 function NotificationButton({saleId} : Props) {
